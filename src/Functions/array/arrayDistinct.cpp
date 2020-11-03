@@ -172,8 +172,8 @@ bool FunctionArrayDistinct::executeNumber(
 
             if (!set.find(values[j]))
             {
-                res_data.emplace_back(values[j]);
                 set.insert(values[j]);
+                res_data.emplace_back(values[j]);
             }
         }
 
